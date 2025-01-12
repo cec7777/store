@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Cart - Scent Haven</title>
+
+  <style>
+    /* General Reset */
+
+
+    body {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    .header-name{
+    background-color:black  ;
+    text-align: center;
+    justify-items: center;
+    color:white;
+    position: absolute;
+    top:0;
+    width:100%;
+    left:0px;
+    height:123px;
+    padding:0px;
+    margin-top: -1px;
+    
+    
+   
+}
+
+
+.title{
+    border:double;
+    border-radius: 3px;
+    border-width: 10px;
+    border-color: #E00034;
+    height:50px;
+    width:200px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 30;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+.header-title{
+    margin-bottom: 42px;
+    margin-top:20px;
+}
+.navbar{
+    background-color:  #E00034;
+    width:100%;
+    height:39%;
+    margin-top: 139px;
+}
+.nav-link{
+    color:white;
+}
+.nav{
+    display: flex;
+    margin-top:-17px;
+    justify-content: center;
+    justify-items: center;
+    gap:120px;
+    
+}
+
+.nav-item{
+    list-style-type: none;
+    margin-top: 10px;
+    
+
+}
+.nav ul li{
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+.nav-link{
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
+    gap:30px;
+    font-size: 19px;
+
+
+}
+
+    /* Cart Container */
+    .cart-container {
+      margin: 150px auto;
+      max-width: 900px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .cart-items {
+      margin-top: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+
+    .total {
+      text-align: right;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    /* Grid for Buttons */
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+      text-align: center;
+      
+    }
+
+    /* Buttons */
+    button.add-to-cart {
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button.add-to-cart:hover {
+      background-color: darkgray;
+    }
+
+    button.remove-item {
+      padding: 5px 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button.remove-item:hover {
+      background-color: darkred;
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .submit-button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-name">
+    <h1 class="title">Scent Haven</h1>
+  </div>
+
+  <div class="navbar">
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="fragrances.html">Our Fragrances</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link active" href="cart.html">Your Cart</a></li>
+    </ul>
+  </div>
+  <div class="cart-container">
+    <h1>Your Cart</h1>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="total" id="cart-total">Total: $0.00</div>
+    <button id="submit-order" class="submit-button">Submit Order</button>
+  </div>
+  
+
+  <div class="button-grid">
+    <button class="add-to-cart" data-name="Georgio Armani - Aqua di Gio" data-price="100">Add Aqua di Gio</button>
+    <button class="add-to-cart" data-name="Chanel - Bleu de Chanel" data-price="105">Add Bleu de Chanel</button>
+    <button class="add-to-cart" data-name="Dior - Sauvage" data-price="105">Add Sauvage</button>
+    <button class="add-to-cart" data-name="Tom Ford - Noir Extreme" data-price="140">Add Noir Extreme</button>
+    <button class="add-to-cart" data-name="Versace - Eros" data-price="100">Add Eros</button>
+    <button class="add-to-cart" data-name="Paco Rabanne - 1 Million" data-price="95">Add 1 Million</button>
+    <button class="add-to-cart" data-name="Givenchy - Gentleman" data-price="90">Add Gentleman</button>
+    <button class="add-to-cart" data-name="Calvin Klein - Eternity" data-price="75">Add Eternity</button>
+    <button class="add-to-cart" data-name="Burberry - Mr Burberry" data-price="90">Add Mr Burberry</button>
+    <button class="add-to-cart" data-name="Jean Paul Gaultier - Le Male" data-price="100">Add Le Male</button>
+    <button class="add-to-cart" data-name="Dolce & Gabbana - Light Blue" data-price="90">Add Light Blue</button>
+    <button class="add-to-cart" data-name="Tommy Hilfiger - Tommy" data-price="69">Add Tommy Hilfiger</button>
+    <button class="add-to-cart" data-name="Ralph Lauren - Ralph" data-price="131">Add Polo Ralph Lauren</button>
+    <button class="add-to-cart" data-name="Yves Saint Laurent - Y Le Parfum" data-price="69">Add Y Le Parfum</button>
+    <button class="add-to-cart" data-name="Lacoste - Essential" data-price="69">Add Essential</button>
+  </div>
+
+  <script>
+    let cartTotal = 0;
+
+    // Load cart from localStorage when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        loadCartFromStorage();
+        
+        // Attach event listeners to "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll('button.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const itemName = this.getAttribute('data-name');
+                const itemPrice = parseFloat(this.getAttribute('data-price'));
+                addItemToCart(itemName, itemPrice);
+            });
+        });
+    });
+
+    // Function to load cart from localStorage
+    function loadCartFromStorage() {
+        const cartData = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartTotal = parseFloat(localStorage.getItem('cartTotal')) || 0;
+
+        cartData.forEach(item => {
+            addItemToCart(item.name, item.price, false);
+        });
+
+        document.getElementById('cart-total').innerText = `Total: $${cartTotal.toFixed(2)}`;
+    }
+
+    // Function to add an item to the cart
+    function addItemToCart(itemName, itemPrice, updateStorage = true) {
+        const cartItemsContainer = document.getElementById('cart-items');
+
+        // Create a new cart item element
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+            ${itemName} - $${itemPrice.toFixed(2)}
+            <button class="remove-item">Remove</button>
+        `;
+
+        // Add the new item to the cart display
+        cartItemsContainer.appendChild(cartItem);
+
+        // Update the total cost
+        cartTotal += itemPrice;
+        document.getElementById('cart-total').innerText = `Total: $${cartTotal.toFixed(2)}`;
+
+        // Store in localStorage if needed
+        if (updateStorage) {
+            updateLocalStorage(itemName, itemPrice);
+        }
+
+        // Remove item event
+        cartItem.querySelector('.remove-item').addEventListener('click', function () {
+            cartItemsContainer.removeChild(cartItem);
+            cartTotal -= itemPrice;
+            document.getElementById('cart-total').innerText = `Total: $${cartTotal.toFixed(2)}`;
+            removeFromLocalStorage(itemName, itemPrice);
+        });
+    }
+
+    // Function to update cart in localStorage
+    function updateLocalStorage(itemName, itemPrice) {
+        const cartData = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartData.push({ name: itemName, price: itemPrice });
+        localStorage.setItem('cartItems', JSON.stringify(cartData));
+        localStorage.setItem('cartTotal', cartTotal.toFixed(2));
+    }
+
+    // Function to remove item from localStorage
+    function removeFromLocalStorage(itemName, itemPrice) {
+        let cartData = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartData = cartData.filter(item => !(item.name === itemName && item.price === itemPrice));
+        localStorage.setItem('cartItems', JSON.stringify(cartData));
+        localStorage.setItem('cartTotal', cartTotal.toFixed(2));
+    }
+
+    // Submit order button to clear cart
+    document.getElementById('submit-order').addEventListener('click', function () {
+        // Clear cart items in UI and localStorage
+        document.getElementById('cart-items').innerHTML = '';
+        cartTotal = 0;
+        document.getElementById('cart-total').innerText = 'Total: $0.00';
+        localStorage.removeItem('cartItems');
+        localStorage.removeItem('cartTotal');
+        alert('Order submitted successfully!');
+    });
+</script>
+
+</body>
+</html>

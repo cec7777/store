@@ -1,0 +1,432 @@
+.header-name{
+    background-color:black  ;
+    text-align: center;
+    justify-items: center;
+    color:white;
+    position: absolute;
+    top:0;
+    width:100%;
+    left:0px;
+    height:123px;
+    padding:0px;
+    margin-top: -1px;
+    
+   
+}
+
+.allbuttons {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .allbuttons:hover {
+    background-color: red;
+    transform: scale(1.05);
+  }
+  
+
+.title{
+    border:double;
+    border-radius: 3px;
+    border-width: 10px;
+    border-color: #E00034;
+    height:50px;
+    width:200px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 30;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+.header-title{
+    margin-bottom: 42px;
+    margin-top:20px;
+}
+.navbar{
+    background-color:  #E00034;
+    width:100%;
+    height:39%;
+}
+.nav-link{
+    color:white;
+}
+.nav{
+    display: flex;
+    margin-top:-17px;
+    justify-content: center;
+    justify-items: center;
+    gap:120px;
+    
+}
+
+.nav-item{
+    list-style-type: none;
+    margin-top: 10px;
+    
+
+}
+.nav ul li{
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+.nav-link{
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
+    gap:30px;
+    font-size: 19px;
+
+
+}
+
+
+
+.div1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 230px;
+    flex-wrap: wrap; /* Ensure responsiveness if items overflow */
+  }
+  
+  .gio, .bleu, .sauvage-item {
+    width: 270px;
+    background: #E0E0E0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gio-img img, .blue-img img, .sauvage-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .gio-text h1, .blue-text h1, .sauvage-text h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .gio-text p, .blue-text p, .sauvage-text p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .gio button, .blue-text button, .sauvage-text button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .gio button:hover, .blue-text button:hover, .sauvage-text button:hover {
+    background: #E00034;
+  }
+
+
+
+
+
+  .div2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap; /* Ensure responsiveness if items overflow */
+  }
+  
+  .tom, .eros, .paco {
+    width: 270px;
+    background: #E0E0E0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tom-img img, .eros-img img, .paco-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tom-text h1, .eros-text h1, .paco-text h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .tom-text p, .paco-text p, .eros-text p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .paco button, .eros-text button, .tom-text button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .paco button:hover, .eros-text button:hover, .tom-text button:hover {
+    background: #E00034;
+  }
+
+
+
+
+  .div3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap; /* Ensure responsiveness if items overflow */
+  }
+  
+  .giv, .burberry, .eternity {
+    width: 270px;
+    background: #E0E0E0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.burberry-img img, .eternity-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .giv-img img{
+    width: 200px;
+    height: 200px;
+    
+  }
+  
+  .giv-text h1, .burberry-text h1, .eternity-text h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .giv-text p, .burberry-text p, .eternity-text p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .giv button, .burberry-text button, .eternity-text button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .giv button:hover, .burberry-text button:hover, .eternity-text button:hover {
+    background: #E00034;
+  }
+
+
+
+
+
+
+
+
+.div4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap; /* Ensure responsiveness if items overflow */
+  }
+  
+  .paul, .dg, .tommy {
+    width: 270px;
+    background: #E0E0E0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.paul{
+    height: 340px;
+}
+.paul-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+  .dg-img img, .tommy-img img{
+    width: 200px;
+    height: 250px;
+    
+  }
+  
+  
+  .paul-text h1, .dg-text h1, .tommy-text h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .paul-text p, .dg-text p, .tommy-text p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .paul button, .tommy-text button, .dg-text button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .dg button:hover, .paul-text button:hover, .tommy-text button:hover {
+    background: #E00034;
+  }
+  
+  
+
+  .div5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap; /* Ensure responsiveness if items overflow */
+  }
+  
+  .polo, .lac, .ysl {
+    width: 270px;
+    background: #E0E0E0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .polo-img img, .lac-img img, .ysl-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .polo-text h1, .lac-text h1, .ysl-text h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .polo-text p, .lac-text p, .ysl-text p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .polo button, .lac-text button, .ysl-text button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .polo button:hover, .lac-text button:hover, .ysl-text button:hover {
+    background: #E00034;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cart-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-cart {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown-cart h3 {
+    text-align: center;
+  }
+  
+  .cart-dropdown:hover .dropdown-cart {
+    display: block;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  #cart-total-dropdown {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  

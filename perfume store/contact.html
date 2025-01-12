@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactcss.css">
+    <title>Contact - Scent Haven</title>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <div class="header-name">
+        <div class="header-title">
+            <h1 class="title">Scent Haven</h1>
+        </div>
+        <div class="navbar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="fragrances.html">Our Fragrances</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Your Cart</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="text2">
+        <h1>Feel free to reach out!</h1>
+    </div>
+    <div class="contact-form">
+        <div class="form-group">
+            <label for="first-name">First name*</label>
+            <input type="text" id="first-name" placeholder="First name">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last name*</label>
+            <input type="text" id="last-name" placeholder="Last name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Enter your email*</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" placeholder="Phone">
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject*</label>
+            <select id="subject">
+                <option value="">Select Question</option>
+                <option value="order">Order Inquiry</option>
+                <option value="general">General Question</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="order-number">Order number if related</label>
+            <input type="text" id="order-number" placeholder="Order number if related">
+        </div>
+
+        <div class="form-group full-width">
+            <label for="message">Your message*</label>
+            <textarea id="message" placeholder="Type your message here..." maxlength="3500"></textarea>
+        </div>
+
+        <div class="form-group full-width">
+            <button type="button" onclick="submitForm()">SEND MESSAGE</button>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Display a confirmation message
+            alert("Your message has been sent successfully!");
+
+            // Clear all form fields
+            document.getElementById("first-name").value = "";
+            document.getElementById("last-name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("order-number").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
+</body>
+</html>
